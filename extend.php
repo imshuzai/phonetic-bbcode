@@ -16,7 +16,7 @@ return [
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
                 '[ph="{TEXT1}"]{TEXT2}[/ph]',
-                '<ruby><rb>{TEXT2}</rb><rt>{TEXT1}</rt></ruby>'
+                '<ruby>{TEXT2}<rt>{TEXT1}</rt></ruby>'
             );
         })
 ];
