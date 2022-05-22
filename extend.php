@@ -15,10 +15,10 @@ return [
     (new Extend\Formatter)
         ->configure(function (Configurator $config) {
             $config->BBCodes->addCustom(
-                '[ph="{TEXT1}"]{TEXT2}[/ph]',
+                '[ph="{TEXT1}"]"{TEXT2}"[/ph]',
                 '<span><ruby>
-                 <rb>{TEXT2}</rb>
-                 <rt>{TEXT1}</rt>
+                 <rb>"{TEXT2}"</rb>
+                 <rt>"{TEXT1}"</rt>
                  </ruby></span>'
             );
         })
