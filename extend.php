@@ -17,8 +17,8 @@ return [
             $config->BBCodes->addCustom(
                 '[ph="{TEXT1}"]"{TEXT2}"[/ph]',
                 '<span><ruby>
-                 <rb>"{TEXT2}"</rb>
-                 <rt>"{TEXT1}"</rt>
+                 <rb>{TEXT2}</rb>
+                 <rt>{TEXT1}</rt>
                  </ruby></span>'
             );
         })
